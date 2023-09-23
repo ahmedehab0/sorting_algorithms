@@ -25,11 +25,13 @@ void quick_sort(int *array, size_t size)
 	quick_sort_recursion(array, 0, (int) size - 1, size);
 }
 /**
- *quick_sort_recursion - function that sorts an array using quick sort alogorithm
+ *quick_sort_recursion - function that sorts an array using quick sort
+ *alogorithm
  *
  *@array: array of integers
  *@low: first index
  *@high: last index
+ *@size: number of elements in the array
  */
 void quick_sort_recursion(int *array, int low, int high, size_t size)
 {
@@ -47,6 +49,7 @@ void quick_sort_recursion(int *array, int low, int high, size_t size)
  *@array: array of integers
  *@low: first index
  *@high: last index
+ *@size: number of elements in the array
  *
  * Return: pivot
  */
